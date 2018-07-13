@@ -1,0 +1,26 @@
+/**
+Eslint quickstart config
+
+yarn add --dev eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+
+Rules details:
+- https://github.com/benmosher/eslint-plugin-import
+- https://github.com/evcohen/eslint-plugin-jsx-a11y
+- https://github.com/yannickcr/eslint-plugin-react
+**/
+
+module.exports = {
+  plugins: [
+    'import',
+    'jsx-a11y',
+    'react',
+  ],
+  extends: [
+    'standard',
+    'plugin:import/errors',
+
+    // [React]
+    'plugin:jsx-a11y/recommended',
+    'plugin:react/recommended',
+  ],
+}
