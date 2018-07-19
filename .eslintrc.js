@@ -3,7 +3,7 @@
 Eslint quickstart config
 ------------------------
 
-yarn add --dev eslint eslint-config-airbnb eslint-plugin-import
+yarn add --dev eslint eslint-config-airbnb eslint-plugin-import babel-eslint
 
 [react]
 yarn add --dev eslint-plugin-jsx-a11y eslint-plugin-react
@@ -24,8 +24,11 @@ Rules details:
 module.exports = {
   root: true,
 
-  parserOptions: {
-    parser: 'babel-eslint',
+  parser: 'babel-eslint',
+
+  env: {
+    browser: true,
+    jest: true
   },
 
   extends: [
@@ -52,12 +55,12 @@ module.exports = {
 
   rules: {
     // [js]
-    'lines-between-class-members': 0,
-    'arrow-body-style': 0,
-    'spaced-comment': 0,
     'semi': [0, 'never'],
     'object-curly-spacing': [0, 'never'],
+    'lines-between-class-members': 0,
     'arrow-parens': [0, 'as-needed'],
+    'arrow-body-style': 0,
+    'spaced-comment': 0,
     'comma-dangle': [0, {
       functions: 'never',
       objects: 'always-multiline',
