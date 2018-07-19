@@ -1,7 +1,10 @@
 /**
+
 Quickstart config for Babel
+---------------------------
 
 yarn add babel-preset-env babel-preset-react babel-plugin-transform-object-rest-spread babel-plugin-transform-class-properties
+
 **/
 {
   "presets": [

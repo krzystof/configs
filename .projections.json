@@ -1,0 +1,45 @@
+{
+  "resources/assets/js/*.js": {
+    "type": "js",
+    "alternate": "resources/assets/js/{dirname}/__tests__/{basename}.test.js"
+  },
+
+  "resources/assets/js/*.vue": {
+    "type": "vue",
+    "skeleton": "component"
+  },
+
+  "resources/assets/js/elements/*.vue": {
+    "type": "element",
+    "skeleton": "component"
+  },
+
+  "resources/assets/js/**/__tests__/*.test.vue.js": {
+    "type": "vuetest",
+    "skeleton": "vuetest",
+    "alternate": "resources/assets/js/{}.js"
+  },
+
+  "app/Http/Controllers/*Controller.php": {
+    "type": "controller"
+  },
+
+  "routes/*.php": {
+    "type": "route"
+  },
+  "routes/api.php": {
+    "type": "route"
+  },
+
+  "database/migrations": {
+    "type": "migration"
+  },
+
+  "tests/Feature": {
+    "type": "feature"
+  },
+  "tests/Feature/*Test.php": {
+    "type": "feature",
+    "skeleton": "featuretest"
+  }
+}
