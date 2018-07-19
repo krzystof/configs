@@ -52,11 +52,12 @@ module.exports = {
 
   rules: {
     // [js]
+    'lines-between-class-members': 0,
+    'arrow-body-style': 0,
+    'spaced-comment': 0,
     'semi': [0, 'never'],
     'object-curly-spacing': [0, 'never'],
-    'lines-between-class-members': 0,
     'arrow-parens': [0, 'as-needed'],
-    'arrow-body-style': 0,
     'comma-dangle': [0, {
       functions: 'never',
       objects: 'always-multiline',
