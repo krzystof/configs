@@ -22,6 +22,10 @@ case "$1" in
     getfile "jest.config.js"
     ;;
 
+  "jsconfig" )
+    getfile "jsconfig.json"
+    ;;
+
   "prettier" )
     getfile ".prettierrc"
     ;;
@@ -56,19 +60,20 @@ case "$1" in
 
   "" )
     echo
-    echo "Usage:  getconfig TOOL"
+    echo "Usage:  getconfig <TOOL>"
     echo
     echo "A futuristic way to set up tools configuration"
     echo
     echo "Configuration Available:"
     echo "  babel         .babelrc"
-    echo "  editorconfig  .babelrc"
+    echo "  editorconfig  .editorconfig"
     echo "  eslint        .eslintrc.js"
     echo "  jest          .jest.config.js"
-    echo "  prettier      .babelrc"
-    echo "  phpunit       .babelrc"
-    echo "  phpmd         .babelrc"
-    echo "  phpcs         .babelrc"
+    echo "  jsconfig      jsconfig.json"
+    echo "  prettier      .prettierrc"
+    echo "  phpunit       phpunit.xml"
+    echo "  phpmd         phpmd.xml"
+    echo "  phpcs         phpcs.xml"
     echo "  phpcsfixer    .php_cs"
     echo "  tsconfig      tsconfig.json"
     echo "  tslint        tslint.json"
