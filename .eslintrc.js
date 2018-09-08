@@ -55,13 +55,13 @@ module.exports = {
 
   rules: {
     // [js]
-    'semi': [0, 'never'],
-    'object-curly-spacing': [0, 'never'],
+    'semi': [1, 'never'],
+    'object-curly-spacing': [1, 'never'],
     'lines-between-class-members': 0,
-    'arrow-parens': [0, 'as-needed'],
-    'arrow-body-style': 0,
+    'arrow-parens': [1, 'as-needed'],
+    'arrow-body-style': 1,
     'spaced-comment': 0,
-    'comma-dangle': [0, {
+    'comma-dangle': [1, {
       functions: 'never',
       objects: 'always-multiline',
       arrays: 'always-multiline',
